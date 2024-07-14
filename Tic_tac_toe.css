@@ -1,0 +1,131 @@
+body{
+    background-color:rgb(59, 167, 167);
+    text-align:center;
+    
+}
+
+h1{
+    font-family: cursive;
+}
+
+#container{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turn-container{
+    width:170px;
+    height:80px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.turn-container .turn-box{
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container.turn-box:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color:pink ;
+    z-index:-1;
+}
+
+#game{
+    height:50vmin;
+    width:50vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vmin;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:3px;
+    box-shadow: 2px 2px 2px rgb(77, 76, 76);
+    
+    
+}
+
+.box{
+    box-sizing: border-box;
+    height:15vmin;
+    width:15vmin;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: rgb(235, 215, 188);
+    box-shadow: 2px 2px 2px rgb(77, 76, 76);
+    color:brown;
+    font-size: 50px;
+    text-align: center;
+    padding:15px;
+    transition-duration: 0.2s;
+}
+
+.box:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.button{
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px black ;
+    margin: 5px;
+    position: relative;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #D20062;
+    color: #FFFDD7;
+    
+}
+
+#winMsg{
+    margin-top: 80px;
+    color:#7ae064;
+    font-size: 12px;
+    -webkit-text-stroke: #297a93 0.5px;
+    background-color: #DFF5FF;
+    transition-property:all;
+    transition-duration: 2s;
+    transform: scale(5);
+
+}
+
+.hide{
+    display: none;
+}
+
+
+
+
+
